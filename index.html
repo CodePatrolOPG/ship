@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"/>
+    <title>Кораблик Мечты</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+      }
+      .content {
+        cursor:default;
+        font-size: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+        z-index: 2;
+        background: #b85042;
+        background: linear-gradient(205deg, rgba(184,80,66,1) 0%, rgba(188,67,50,1) 53%, rgba(176,48,31,1) 100%);
+        color: #e7e8d1;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        box-shadow: 0 2px 3px rgb(112, 97, 97);
+        text-shadow: 0 2px 1px #80362c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">Кораблик мрії</div>
+    <script type="text/javascript">
+      // Map appearance
+      var width = "100%"; // width in pixels or percentage
+      var height = "750"; // height in pixels
+      var names = true; // always show ship names (defaults to false)
+
+      // Single ship tracking
+      var imo = "9751511"; // display latest position (by IMO, overrides MMSI)
+      var show_track = true; // display track line (last 24 hours)
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.vesselfinder.com/aismap.js"
+    ></script>
+  </body>
+</html>
